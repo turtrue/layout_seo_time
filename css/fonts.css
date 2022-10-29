@@ -1,0 +1,20 @@
+/* FONTS LOAD SECTION */
+
+@font-face {
+    src: url("../fonts/roboto-regular-webfont.woff2") format("woff2");
+    font-family: "roboto-st";
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    src: url("../fonts/roboto-bold-webfont.woff2") format("woff2");
+    font-family: "roboto-st";
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    src: url("../fonts/open-sans-v27-latin-regular.woff2") format("woff2");
+    font-family: "open-sans";
+    font-weight: 400;
+    font-style: normal;
+}

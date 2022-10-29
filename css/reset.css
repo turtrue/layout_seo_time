@@ -1,0 +1,84 @@
+/* BOX SIZING RULES */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* REMOVE DEFAULT MARGIN */
+
+body,
+h1,
+h2,
+h3,
+h4,
+ul,
+ol,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* REMOVE LIST STYLES ON UL,OL ELEMENTS WITH A LIST ROLE, WICH SUGGESTS DEFAULT STYLING WILL BE REMOVED */
+
+ul,
+ol {
+    padding: 0;
+    list-style: none;
+}
+
+/* SET CORE ROOT DEFAULTS */
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* SET CORE BODY DRAULTS */
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+}
+
+/* A ELEMENTS THAT DON'T HAVE A CLASS GET DEFAULT STYLES */
+
+a {
+    text-decoration: none;
+}
+
+/* MAKE IMAGES EASIER TO WORK WITH */
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* INHERIT FONTS FOR INPUTS AND BUTTONS */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* REMOVE ALL ANIMATIONS AND TRANSITIONS FOR PEOPLE THAT PREFER NOT TO SEE THEM */
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
